@@ -1,14 +1,14 @@
-import { useState } from 'react';
+import './ShowCount.module.css';
+const ShowCount = ({ currentCount, handleClick }) => {
 
-const ShowCount = () => {
-
-  const [count, setCount] = useState(0);
   return (
-    <div>
-      <h1>You clicked here {count} times</h1>
-      <button onClick={() => setCount(count + 1)}>Add</button>
-      <button onClick={() => setCount(count - 1)}>Substract</button>
-    </div>
+    <section>
+      <h1>You clicked here {currentCount} times</h1>
+      <div>
+        <button onClick={() => handleClick("add")}>Add</button>
+        <button onClick={() => handleClick("substract")}>Substract</button>
+      </div>
+    </section>
   );
 };
 

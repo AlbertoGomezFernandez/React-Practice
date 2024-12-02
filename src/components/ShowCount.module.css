@@ -1,0 +1,46 @@
+
+
+
+section {
+  width: 80%;
+  min-height: 33%;
+  background-color: #4a4a65;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap : 5px;
+  border-radius: 8px;
+}
+
+div {
+  display: flex;
+  margin-bottom: 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+div > button {
+  width: 150px;
+  padding: 5px 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+} 
+
+div > button:hover {
+  background-color: rgb(172, 172, 246);
+  transform: translateY(-2px);
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
